@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MassiliaDrive",
-  description: "VTC Marseille Premium - Transport Premium",
+  description: "MassiliaDrive - Transfer Premium",
 };
 
 export default function RootLayout({

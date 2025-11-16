@@ -11,7 +11,7 @@ export default function ReviewsSection() {
       rating: 5,
       comment:
         "Service impeccable ! Chauffeur très professionnel et ponctuel. Je recommande vivement pour les trajets aéroport.",
-      service: "Transport Aéroport",
+      service: "Transfert Aéroport",
     },
     {
       name: "Jean-Pierre Martin",
@@ -25,7 +25,7 @@ export default function ReviewsSection() {
       rating: 5,
       comment:
         "Toujours à l'heure pour mes rendez-vous professionnels. Service de qualité, je recommande.",
-      service: "Transport Professionnel",
+      service: "Transfert Professionnel",
     },
     {
       name: "Ahmed El Mansouri",

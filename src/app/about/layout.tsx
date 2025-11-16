@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "À Propos de Nous | VTC Marseille Premium",
+  title: "À Propos de Nous | MassiliaDrive",
   description:
-    "Découvrez l'histoire de VTC Marseille Premium, votre partenaire de confiance pour des services de transport premium à Marseille et dans la région PACA. Plus de 10 ans d'expérience.",
+    "Découvrez l'histoire de MassiliaDrive, votre partenaire de confiance pour des services de transfert premium à Marseille et dans la région PACA. Chauffeurs expérimentés.",
 };
 
 export default function AboutLayout({

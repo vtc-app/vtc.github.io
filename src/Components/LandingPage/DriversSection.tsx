@@ -11,7 +11,7 @@ export default function DriversSection() {
       name: "Anis Ouerghi",
       languages: ["Français", "Anglais", "Arabe"],
       image: "/img/drivers/Anis.png",
-      speciality: "Chauffeur VTC - Transferts Aéroport, Transport d'Affaires",
+      speciality: "Chauffeur VTC - Transferts Aéroport, Transfert d'Affaires",
       rating: 4.96,
       ratingSource: "Uber",
       quote:
@@ -61,7 +61,7 @@ export default function DriversSection() {
       image:
         "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=600&fit=crop&crop=face",
       languages: ["Français", "Arabe"],
-      speciality: "Chauffeur VTC - Transport Professionnel, Cadres",
+      speciality: "Chauffeur VTC - Transfert Professionnel, Cadres",
       rating: 4.98,
       ratingSource: "Uber",
       quote:

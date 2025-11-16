@@ -98,7 +98,7 @@ export async function POST(request: NextRequest) {
     // Email content - Send to admin
     const adminEmail =
       process.env.ADMIN_EMAIL || "ranizouaouicontact@gmail.com";
-    const fromName = process.env.EMAIL_FROM_NAME || "VTC Marseille Premium";
+    const fromName = process.env.EMAIL_FROM_NAME || "MassiliaDrive";
 
     console.log("Sending email to:", adminEmail);
     console.log("From:", emailConfig.auth.user);

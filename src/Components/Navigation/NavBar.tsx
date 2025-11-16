@@ -69,12 +69,12 @@ export default function NavBar() {
         <div className="flex lg:flex-1">
           <a href={"/"} className="-m-1.5 p-1.5">
             <img
-              alt="VTC Marseille Premium Logo"
+              alt="MassiliaDrive Logo"
               src="/img/logos/logo_white.png"
               className="h-8 w-auto lg:hidden"
             />
             <img
-              alt="VTC Marseille Premium Logo"
+              alt="MassiliaDrive Logo"
               src="/img/logos/logo_white.png"
               className="h-12 w-[180px] lg:block hidden"
             />

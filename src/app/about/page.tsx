@@ -41,7 +41,7 @@ export default function AboutPage() {
 
   const stats = [
     {
-      number: 10,
+      number: "",
       label: t("about.stats.experience"),
       suffix: "",
       hasPlus: false,
@@ -59,7 +59,7 @@ export default function AboutPage() {
       hasPlus: false,
     },
     {
-      number: 5000,
+      number: 1000,
       label: t("about.stats.clients"),
       suffix: "",
       hasPlus: true,
@@ -209,14 +209,29 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-5xl lg:text-6xl font-bold mb-2">
-                    {stat.number}
-                    {stat.hasPlus && "+"}
-                  </div>
-                  <div className="text-lg font-semibold text-white/90">
-                    {stat.label}
-                  </div>
+                <div
+                  key={index}
+                  className="text-center flex flex-col justify-center"
+                >
+                  {stat.number ? (
+                    <>
+                      <div className="text-5xl lg:text-6xl font-bold mb-2">
+                        {stat.number}
+                        {stat.hasPlus && "+"}
+                      </div>
+                      <div className="text-lg font-semibold text-white/90">
+                        {stat.label}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="text-5xl lg:text-6xl font-bold mb-2 min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
+                        <span className="text-2xl lg:text-3xl font-bold text-white">
+                          {stat.label}
+                        </span>
+                      </div>
+                    </>
+                  )}
                 </div>
               ))}
             </div>

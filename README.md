@@ -1,4 +1,4 @@
-# VTC Marseille Premium - Website
+# MassiliaDrive - Website
 
 ## Project Description
 
@@ -43,7 +43,7 @@ This is a showcase website for a VTC (Vehicle with Driver) service in the Marsei
 
 ### Professional Drivers
 
-- 10+ years of experience
+- Experienced drivers
 - Multilingual (French, English, Arabic, Italian, Spanish)
 - Professional license and safety training
 - Local area expertise
