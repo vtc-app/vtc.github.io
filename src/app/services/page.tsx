@@ -3,6 +3,7 @@
 import NavBar from "@/Components/Navigation/NavBar";
 import Footer from "@/Components/Navigation/Footer";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export default function ServicesPage() {
   const { t } = useTranslation("common");
@@ -73,10 +74,12 @@ export default function ServicesPage() {
                   className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 block cursor-pointer"
                 >
                   <div className="relative h-48">
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>

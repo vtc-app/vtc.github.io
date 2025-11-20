@@ -63,20 +63,22 @@ const getMetadataByLang = (lang: string): Metadata => {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale?: string };
+  params: Promise<{ locale?: string }>;
 }): Promise<Metadata> {
-  const lang = params?.locale || "fr";
+  const resolvedParams = await params;
+  const lang = resolvedParams?.locale || "fr";
   return getMetadataByLang(lang);
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale?: string };
+  params: Promise<{ locale?: string }>;
 }) {
-  const lang = params?.locale || "fr";
+  const resolvedParams = await params;
+  const lang = resolvedParams?.locale || "fr";
 
   return (
     <html lang={lang}>
