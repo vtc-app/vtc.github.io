@@ -31,6 +31,7 @@ const getMetadataByLang = (lang: string): Metadata => {
 
   // GitHub Pages base URL
   const baseUrl = "https://vtc-app.github.io";
+  const imageUrl = `${baseUrl}/opengraph-image.jpg`;
 
   return {
     metadataBase: new URL(baseUrl),
@@ -42,17 +43,19 @@ const getMetadataByLang = (lang: string): Metadata => {
       title: titles[lang as keyof typeof titles] || titles["fr"],
       description:
         descriptions[lang as keyof typeof descriptions] || descriptions["fr"],
+      url: baseUrl,
+      siteName: "MassiliaDrive",
       images: [
         {
-          url: `${baseUrl}/opengraph-image.jpg`,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: "MassiliaDrive - VTC Premium",
+          type: "image/jpeg",
         },
       ],
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
-      url: baseUrl,
     },
     twitter: {
       card: "summary_large_image",
