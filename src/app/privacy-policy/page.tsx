@@ -79,7 +79,8 @@ export default function PrivacyPolicyPage() {
         <section className="py-10 bg-gray-50">
           <div className="container mx-auto px-6 lg:px-10 text-center">
             <p className="text-gray-500 text-sm">
-              {t("privacyPolicy.lastUpdated")} {new Date().toLocaleDateString('fr-FR')}
+              {t("privacyPolicy.lastUpdated")}{" "}
+              {new Date().toLocaleDateString("fr-FR")}
             </p>
           </div>
         </section>

@@ -323,7 +323,7 @@
     "contact": "Contact",
     "copyright": "© {{year}} MassiliaDrive. Tous droits réservés."
   },
-  
+
   "privacyPolicy": {
     "title": "Politique de Confidentialité",
     "subtitle": "Vos données, notre priorité",
@@ -380,5 +380,4 @@
       }
     }
   }
-
 }
