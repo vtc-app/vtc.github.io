@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["master", "main"]
+    branches: ["master", "main", "rzouaoui/implement-metadata"]
   pull_request:
     branches: ["master", "main"]
   workflow_dispatch:
@@ -76,8 +76,8 @@ jobs:
           path: "./out"
 
   deploy:
-    # Only deploy on push to master/main, not on PRs or other branches
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+    # Only deploy on push to master/main/rzouaoui/implement-metadata, not on PRs or other branches
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/rzouaoui/implement-metadata')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
